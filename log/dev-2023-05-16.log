@@ -1,0 +1,1002 @@
+┌ Info: 2023-05-16 07:53:50 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 07:53:52 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/PUAi8/src/Server.jl:161
+┌ Info: 2023-05-16 07:53:52 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/qGpdS/src/Servers.jl:366
+┌ Error: 2023-05-16 07:54:34 Failed to revise /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│   exception = (LoadError("/home/coder/.julia/geniebuilder/apps/friapp1/app.jl", 10, MethodError(Stipple.ReactiveTools.var"@out", (:(#= /home/coder/.julia/geniebuilder/apps/friapp1/app.jl:10 =#), Main.App), 0xffffffffffffffff)), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:721
+┌ Warning: 2023-05-16 07:54:36 The running code does not match the saved version for the following files:
+│ 
+│   /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:829
+┌ Error: 2023-05-16 07:56:42 Failed to revise /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl
+│   exception = (LoadError("/home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl", 3, MethodError(PrecompileTools.var"@setup_workload", (:(#= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:3 =#), Parsers, quote
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:6 =#
+    options = Parsers.Options()
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:7 =#
+    pos = 1
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:8 =#
+    val = "123"
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:9 =#
+    len = length(val)
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:10 =#
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:10 =# @compile_workload begin
+            #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:13 =#
+            for T = (String, Int32, Int64, Float64, BigFloat, Dates.Date, Dates.DateTime, Dates.Time, Bool)
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:14 =#
+                for buf = (codeunits(val), Vector(codeunits(val)))
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:15 =#
+                    Parsers.xparse(T, buf, pos, len, options)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:16 =#
+                    Parsers.xparse(T, buf, pos, len, options, Any)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:17 =#
+                end
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:18 =#
+            end
+            #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:20 =#
+            for T = (Int32, Int64, Float64, BigFloat, Dates.Date, Dates.DateTime, Dates.Time, Bool)
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:21 =#
+                for buf = (val, SubString(val, 1:3), Vector(codeunits(val)), view(Vector(codeunits(val)), 1:3))
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:22 =#
+                    try
+                        #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:23 =#
+                        Parsers.parse(T, buf, options)
+                    catch
+                    end
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:26 =#
+                    Parsers.tryparse(T, buf, options)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:27 =#
+                end
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:28 =#
+            end
+        end
+end), 0xffffffffffffffff)), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:721
+┌ Error: 2023-05-16 07:56:44 Failed to revise /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl
+│   exception = (LoadError("/home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl", 3, MethodError(PrecompileTools.var"@setup_workload", (:(#= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:3 =#), Parsers, quote
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:6 =#
+    options = Parsers.Options()
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:7 =#
+    pos = 1
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:8 =#
+    val = "123"
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:9 =#
+    len = length(val)
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:10 =#
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:10 =# @compile_workload begin
+            #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:13 =#
+            for T = (String, Int32, Int64, Float64, BigFloat, Dates.Date, Dates.DateTime, Dates.Time, Bool)
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:14 =#
+                for buf = (codeunits(val), Vector(codeunits(val)))
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:15 =#
+                    Parsers.xparse(T, buf, pos, len, options)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:16 =#
+                    Parsers.xparse(T, buf, pos, len, options, Any)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:17 =#
+                end
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:18 =#
+            end
+            #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:20 =#
+            for T = (Int32, Int64, Float64, BigFloat, Dates.Date, Dates.DateTime, Dates.Time, Bool)
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:21 =#
+                for buf = (val, SubString(val, 1:3), Vector(codeunits(val)), view(Vector(codeunits(val)), 1:3))
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:22 =#
+                    try
+                        #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:23 =#
+                        Parsers.parse(T, buf, options)
+                    catch
+                    end
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:26 =#
+                    Parsers.tryparse(T, buf, options)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:27 =#
+                end
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:28 =#
+            end
+        end
+end), 0xffffffffffffffff)), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:721
+┌ Error: 2023-05-16 07:56:44 Failed to revise /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl
+│   exception = (LoadError("/home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl", 3, MethodError(PrecompileTools.var"@setup_workload", (:(#= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:3 =#), Parsers, quote
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:6 =#
+    options = Parsers.Options()
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:7 =#
+    pos = 1
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:8 =#
+    val = "123"
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:9 =#
+    len = length(val)
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:10 =#
+    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:10 =# @compile_workload begin
+            #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:13 =#
+            for T = (String, Int32, Int64, Float64, BigFloat, Dates.Date, Dates.DateTime, Dates.Time, Bool)
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:14 =#
+                for buf = (codeunits(val), Vector(codeunits(val)))
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:15 =#
+                    Parsers.xparse(T, buf, pos, len, options)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:16 =#
+                    Parsers.xparse(T, buf, pos, len, options, Any)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:17 =#
+                end
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:18 =#
+            end
+            #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:20 =#
+            for T = (Int32, Int64, Float64, BigFloat, Dates.Date, Dates.DateTime, Dates.Time, Bool)
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:21 =#
+                for buf = (val, SubString(val, 1:3), Vector(codeunits(val)), view(Vector(codeunits(val)), 1:3))
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:22 =#
+                    try
+                        #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:23 =#
+                        Parsers.parse(T, buf, options)
+                    catch
+                    end
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:26 =#
+                    Parsers.tryparse(T, buf, options)
+                    #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:27 =#
+                end
+                #= /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl:28 =#
+            end
+        end
+end), 0xffffffffffffffff)), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:721
+┌ Error: 2023-05-16 07:56:44 Failed to revise /home/coder/.julia/packages/OpenSSL/8wxMC/src/ssl.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/geniebuilder/apps/friapp1/none:0", ErrorException("invalid redefinition of constant SSLStream"), Any[(top-level scope at none:0, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Error: 2023-05-16 07:56:44 Failed to revise /home/coder/.julia/packages/OpenSSL/8wxMC/src/ssl.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/geniebuilder/apps/friapp1/none:0", ErrorException("invalid redefinition of constant SSLStream"), Any[(top-level scope at none:0, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Error: 2023-05-16 07:56:44 Failed to revise /home/coder/.julia/packages/OpenSSL/8wxMC/src/ssl.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/geniebuilder/apps/friapp1/none:0", ErrorException("invalid redefinition of constant SSLStream"), Any[(top-level scope at none:0, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Error: 2023-05-16 07:56:44 Failed to revise /home/coder/.julia/packages/StipplePlotly/0bEuU/src/Charts.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/geniebuilder/apps/friapp1/util.jl:515", ErrorException("invalid redefinition of type PlotData"), Any[(top-level scope at util.jl:515, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Error: 2023-05-16 07:56:45 Failed to revise /home/coder/.julia/packages/StipplePlotly/0bEuU/src/Charts.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/geniebuilder/apps/friapp1/util.jl:515", ErrorException("invalid redefinition of type PlotData"), Any[(top-level scope at util.jl:515, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Error: 2023-05-16 07:56:45 Failed to revise /home/coder/.julia/packages/StipplePlotly/0bEuU/src/Charts.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/geniebuilder/apps/friapp1/util.jl:515", ErrorException("invalid redefinition of type PlotData"), Any[(top-level scope at util.jl:515, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Warning: 2023-05-16 07:56:45 The running code does not match the saved version for the following files:
+│ 
+│   /home/coder/.julia/packages/Parsers/mPY37/src/precompile.jl
+│   /home/coder/.julia/packages/OpenSSL/8wxMC/src/ssl.jl
+│   /home/coder/.julia/packages/StipplePlotly/0bEuU/src/Charts.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:829
+┌ Info: 2023-05-16 07:57:36 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 07:57:38 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 07:57:38 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Info: 2023-05-16 08:01:40 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:01:42 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 08:01:43 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Info: 2023-05-16 08:02:58 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:12:36 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:12:37 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 08:12:38 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Error: 2023-05-16 08:12:58 Failed to store session data
+└ @ GenieSessionFileSession /home/coder/.julia/packages/GenieSessionFileSession/otnJC/src/GenieSessionFileSession.jl:41
+┌ Error: 2023-05-16 08:12:58 Failed to store session data
+└ @ GenieSessionFileSession /home/coder/.julia/packages/GenieSessionFileSession/otnJC/src/GenieSessionFileSession.jl:41
+┌ Error: 2023-05-16 08:12:58 ArgumentError("embedded NULs are not allowed in C strings: \"/tmp/jl_YdoZ8R/\\x1d\\x13\\x10Ӥ\\xace?\\f\\xe8a,+\\x19\\xe2<ZӪ@/Yrx\\x9e\\x13\\xcc\\x10)\\x15\\x9e\\xf2t@?ů\\xe7\\xf8\\xd51\\xfdzI\\xae\\x17\\x8b(\\f\\\\\\x1e\\x89\\x85c\\xed\\xcb\\xf63\\xf7\\xb6\\x003\\t\\xc9\\u7b4'c|Nl\\x10\\xa1\\\"\\xc2V\\xa2\\t\\xcd\\0\"")
+└ @ GenieSessionFileSession /home/coder/.julia/packages/GenieSessionFileSession/otnJC/src/GenieSessionFileSession.jl:42
+┌ Error: 2023-05-16 08:12:58 ArgumentError("embedded NULs are not allowed in C strings: \"/tmp/jl_YdoZ8R/\\x1d\\x13\\x10Ӥ\\xace?\\f\\xe8a,+\\x19\\xe2<ZӪ@/Yrx\\x9e\\x13\\xcc\\x10)\\x15\\x9e\\xf2t@?ů\\xe7\\xf8\\xd51\\xfdzI\\xae\\x17\\x8b(\\f\\\\\\x1e\\x89\\x85c\\xed\\xcb\\xf63\\xf7\\xb6\\x003\\t\\xc9\\u7b4'c|Nl\\x10\\xa1\\\"\\xc2V\\xa2\\t\\xcd\\0\"")
+└ @ GenieSessionFileSession /home/coder/.julia/packages/GenieSessionFileSession/otnJC/src/GenieSessionFileSession.jl:42
+┌ Error: 2023-05-16 08:12:58 Resetting session
+└ @ GenieSessionFileSession /home/coder/.julia/packages/GenieSessionFileSession/otnJC/src/GenieSessionFileSession.jl:46
+┌ Error: 2023-05-16 08:12:58 Resetting session
+└ @ GenieSessionFileSession /home/coder/.julia/packages/GenieSessionFileSession/otnJC/src/GenieSessionFileSession.jl:46
+┌ Info: 2023-05-16 08:13:18 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:13:26 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:13:32 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:14:02 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:14:44 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:14:46 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:15:32 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:15:36 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:16:06 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:18:03 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:18:09 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:18:14 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:18:30 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:19:09 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:23:27 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:23:29 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 08:23:29 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Info: 2023-05-16 08:25:55 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:26:03 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:26:12 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:26:33 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Error: 2023-05-16 08:26:38 LoadError: syntax: invalid interpolation syntax: "${"
+│ Stacktrace:
+│   [1] top-level scope
+│     @ /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:15
+│   [2] include
+│     @ ./Base.jl:419 [inlined]
+│   [3] get_template(path::String; partial::Bool, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#326", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#326"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:360
+│   [4] render(viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#326", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#326"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:438
+│   [5] render(::Type{MIME{Symbol("text/html")}}, viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#326", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#326"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:486
+│   [6] #html#33
+│     @ ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:637 [inlined]
+│   [7] (::Stipple.Pages.var"#5#6"{FilePathsBase.PosixPath, String, Module, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/XoQ2b/src/Pages.jl:52
+│   [8] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:535
+│   [9] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:173
+│  [10] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:278
+│  [11] (::Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/macros.jl:123
+│  [12] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [13] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [14] #153
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:425 [inlined]
+│  [15] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/process_messages.jl:70
+│  [16] #remotecall_fetch#158
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:450 [inlined]
+│  [17] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:449 [inlined]
+│  [18] #remotecall_fetch#162
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [19] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [20] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:305
+│  [21] setup_http_listener
+│     @ ~/.julia/packages/Genie/Jummj/src/Server.jl:304 [inlined]
+│  [22] (::HTTP.Handlers.var"#1#2"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ HTTP.Handlers ~/.julia/packages/HTTP/A83Es/src/Handlers.jl:58
+│  [23] setup_http_streamer(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:294
+│  [24] (::Genie.Server.var"#7#14")(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:121
+│  [25] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [26] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [27] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/A83Es/src/Servers.jl:447
+│  [28] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#14", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ./task.jl:484
+│ in expression starting at /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:15
+│ 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:317
+┌ Info: 2023-05-16 08:26:40 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:26:43 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:26:47 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:26:50 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:26:54 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Error: 2023-05-16 08:26:58 UndefVarError: routeto not defined
+│ Stacktrace:
+│   [1] getproperty
+│     @ ./Base.jl:31 [inlined]
+│   [2] func_2e6e7fcc87754491a0903780c83db4e5de55751f(; context::Module, model::Main.App.var"##Main.App_ReactiveModel!#326")
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:5
+│   [3] func_2e6e7fcc87754491a0903780c83db4e5de55751f()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:3
+│   [4] (::Main.App.var"#50#63"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:57
+│   [5] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│   [6] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│   [7] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│   [8] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│   [9] (::Main.App.var"#49#62"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:56
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [12] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [13] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [14] (::Main.App.var"#48#61"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:55
+│  [15] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [16] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [17] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [18] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [19] (::Main.App.var"#47#60"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:54
+│  [20] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [21] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [22] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [23] #body#79
+│     @ ./none:2 [inlined]
+│  [24] (::Main.App.var"#43#56"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:9
+│  [25] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [26] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [27] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [28] #html#67
+│     @ ./none:2 [inlined]
+│  [29] func_dc62313a223e3efee34ace15d322d1682a5cd84f(; context::Module, model::Main.App.var"##Main.App_ReactiveModel!#326")
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:5
+│  [30] func_dc62313a223e3efee34ace15d322d1682a5cd84f()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:3
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [33] WebRenderable(::Function)
+│     @ Genie.Renderer ~/.julia/packages/Genie/Jummj/src/Renderer.jl:163
+│  [34] |>
+│     @ ./operators.jl:911 [inlined]
+│  [35] render(::Type{MIME{Symbol("text/html")}}, viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#326", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#326"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:486
+│  [36] #html#33
+│     @ ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:637 [inlined]
+│  [37] (::Stipple.Pages.var"#5#6"{FilePathsBase.PosixPath, String, Module, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/XoQ2b/src/Pages.jl:52
+│  [38] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:535
+│  [39] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:173
+│  [40] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:278
+│  [41] (::Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/macros.jl:123
+│  [42] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [43] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [44] #153
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:425 [inlined]
+│  [45] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/process_messages.jl:70
+│  [46] #remotecall_fetch#158
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:450 [inlined]
+│  [47] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:449 [inlined]
+│  [48] #remotecall_fetch#162
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [49] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [50] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:305
+│  [51] setup_http_listener
+│     @ ~/.julia/packages/Genie/Jummj/src/Server.jl:304 [inlined]
+│  [52] (::HTTP.Handlers.var"#1#2"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ HTTP.Handlers ~/.julia/packages/HTTP/A83Es/src/Handlers.jl:58
+│  [53] setup_http_streamer(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:294
+│  [54] (::Genie.Server.var"#7#14")(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:121
+│  [55] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [56] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [57] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/A83Es/src/Servers.jl:447
+│ 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:317
+┌ Info: 2023-05-16 08:26:58 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:27:06 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Error: 2023-05-16 08:27:08 UndefVarError: routeto not defined
+│ Stacktrace:
+│   [1] getproperty
+│     @ ./Base.jl:31 [inlined]
+│   [2] func_2e6e7fcc87754491a0903780c83db4e5de55751f(; context::Module, model::Main.App.var"##Main.App_ReactiveModel!#326")
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:5
+│   [3] func_2e6e7fcc87754491a0903780c83db4e5de55751f()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:3
+│   [4] (::Main.App.var"#50#63"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:57
+│   [5] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│   [6] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│   [7] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│   [8] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│   [9] (::Main.App.var"#49#62"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:56
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [12] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [13] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [14] (::Main.App.var"#48#61"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:55
+│  [15] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [16] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [17] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [18] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [19] (::Main.App.var"#47#60"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:54
+│  [20] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [21] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [22] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [23] #body#79
+│     @ ./none:2 [inlined]
+│  [24] (::Main.App.var"#43#56"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:9
+│  [25] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [26] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [27] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [28] #html#67
+│     @ ./none:2 [inlined]
+│  [29] func_dc62313a223e3efee34ace15d322d1682a5cd84f(; context::Module, model::Main.App.var"##Main.App_ReactiveModel!#326")
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:5
+│  [30] func_dc62313a223e3efee34ace15d322d1682a5cd84f()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:3
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [33] WebRenderable(::Function)
+│     @ Genie.Renderer ~/.julia/packages/Genie/Jummj/src/Renderer.jl:163
+│  [34] |>
+│     @ ./operators.jl:911 [inlined]
+│  [35] render(::Type{MIME{Symbol("text/html")}}, viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#326", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#326"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:486
+│  [36] #html#33
+│     @ ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:637 [inlined]
+│  [37] (::Stipple.Pages.var"#5#6"{FilePathsBase.PosixPath, String, Module, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/XoQ2b/src/Pages.jl:52
+│  [38] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:535
+│  [39] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:173
+│  [40] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:278
+│  [41] (::Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/macros.jl:123
+│  [42] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [43] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [44] #153
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:425 [inlined]
+│  [45] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/process_messages.jl:70
+│  [46] #remotecall_fetch#158
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:450 [inlined]
+│  [47] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:449 [inlined]
+│  [48] #remotecall_fetch#162
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [49] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [50] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:305
+│  [51] setup_http_listener
+│     @ ~/.julia/packages/Genie/Jummj/src/Server.jl:304 [inlined]
+│  [52] (::HTTP.Handlers.var"#1#2"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ HTTP.Handlers ~/.julia/packages/HTTP/A83Es/src/Handlers.jl:58
+│  [53] setup_http_streamer(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:294
+│  [54] (::Genie.Server.var"#7#14")(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:121
+│  [55] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [56] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [57] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/A83Es/src/Servers.jl:447
+│ 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:317
+┌ Error: 2023-05-16 08:27:15 UndefVarError: routeto not defined
+│ Stacktrace:
+│   [1] getproperty
+│     @ ./Base.jl:31 [inlined]
+│   [2] func_2e6e7fcc87754491a0903780c83db4e5de55751f(; context::Module, model::Main.App.var"##Main.App_ReactiveModel!#326")
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:5
+│   [3] func_2e6e7fcc87754491a0903780c83db4e5de55751f()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:3
+│   [4] (::Main.App.var"#50#63"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:57
+│   [5] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│   [6] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│   [7] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│   [8] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│   [9] (::Main.App.var"#49#62"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:56
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [12] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [13] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [14] (::Main.App.var"#48#61"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:55
+│  [15] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [16] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [17] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [18] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [19] (::Main.App.var"#47#60"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:54
+│  [20] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [21] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [22] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [23] #body#79
+│     @ ./none:2 [inlined]
+│  [24] (::Main.App.var"#43#56"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:9
+│  [25] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [26] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [27] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [28] #html#67
+│     @ ./none:2 [inlined]
+│  [29] func_dc62313a223e3efee34ace15d322d1682a5cd84f(; context::Module, model::Main.App.var"##Main.App_ReactiveModel!#326")
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:5
+│  [30] func_dc62313a223e3efee34ace15d322d1682a5cd84f()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:3
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [33] WebRenderable(::Function)
+│     @ Genie.Renderer ~/.julia/packages/Genie/Jummj/src/Renderer.jl:163
+│  [34] |>
+│     @ ./operators.jl:911 [inlined]
+│  [35] render(::Type{MIME{Symbol("text/html")}}, viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#326", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#326"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:486
+│  [36] #html#33
+│     @ ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:637 [inlined]
+│  [37] (::Stipple.Pages.var"#5#6"{FilePathsBase.PosixPath, String, Module, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/XoQ2b/src/Pages.jl:52
+│  [38] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:535
+│  [39] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:173
+│  [40] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:278
+│  [41] (::Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/macros.jl:123
+│  [42] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [43] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [44] #153
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:425 [inlined]
+│  [45] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/process_messages.jl:70
+│  [46] #remotecall_fetch#158
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:450 [inlined]
+│  [47] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:449 [inlined]
+│  [48] #remotecall_fetch#162
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [49] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [50] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:305
+│  [51] setup_http_listener
+│     @ ~/.julia/packages/Genie/Jummj/src/Server.jl:304 [inlined]
+│  [52] (::HTTP.Handlers.var"#1#2"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ HTTP.Handlers ~/.julia/packages/HTTP/A83Es/src/Handlers.jl:58
+│  [53] setup_http_streamer(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:294
+│  [54] (::Genie.Server.var"#7#14")(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:121
+│  [55] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [56] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [57] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/A83Es/src/Servers.jl:447
+│ 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:317
+┌ Error: 2023-05-16 08:27:18 UndefVarError: routeto not defined
+│ Stacktrace:
+│   [1] getproperty
+│     @ ./Base.jl:31 [inlined]
+│   [2] func_2e6e7fcc87754491a0903780c83db4e5de55751f(; context::Module, model::Main.App.var"##Main.App_ReactiveModel!#326")
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:5
+│   [3] func_2e6e7fcc87754491a0903780c83db4e5de55751f()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:3
+│   [4] (::Main.App.var"#50#63"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:57
+│   [5] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│   [6] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│   [7] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│   [8] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│   [9] (::Main.App.var"#49#62"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:56
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [12] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [13] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [14] (::Main.App.var"#48#61"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:55
+│  [15] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [16] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [17] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [18] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [19] (::Main.App.var"#47#60"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:54
+│  [20] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [21] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [22] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [23] #body#79
+│     @ ./none:2 [inlined]
+│  [24] (::Main.App.var"#43#56"{Main.App.var"##Main.App_ReactiveModel!#326"})()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:9
+│  [25] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [26] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [27] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:137
+│  [28] #html#67
+│     @ ./none:2 [inlined]
+│  [29] func_dc62313a223e3efee34ace15d322d1682a5cd84f(; context::Module, model::Main.App.var"##Main.App_ReactiveModel!#326")
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:5
+│  [30] func_dc62313a223e3efee34ace15d322d1682a5cd84f()
+│     @ Main.App /tmp/jl_genie_build_nY3m1Q/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:3
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [33] WebRenderable(::Function)
+│     @ Genie.Renderer ~/.julia/packages/Genie/Jummj/src/Renderer.jl:163
+│  [34] |>
+│     @ ./operators.jl:911 [inlined]
+│  [35] render(::Type{MIME{Symbol("text/html")}}, viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#326", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#326"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:486
+│  [36] #html#33
+│     @ ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:637 [inlined]
+│  [37] (::Stipple.Pages.var"#5#6"{FilePathsBase.PosixPath, String, Module, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/XoQ2b/src/Pages.jl:52
+│  [38] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:535
+│  [39] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:173
+│  [40] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:278
+│  [41] (::Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/macros.jl:123
+│  [42] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [43] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [44] #153
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:425 [inlined]
+│  [45] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/process_messages.jl:70
+│  [46] #remotecall_fetch#158
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:450 [inlined]
+│  [47] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:449 [inlined]
+│  [48] #remotecall_fetch#162
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [49] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [50] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:305
+│  [51] setup_http_listener
+│     @ ~/.julia/packages/Genie/Jummj/src/Server.jl:304 [inlined]
+│  [52] (::HTTP.Handlers.var"#1#2"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ HTTP.Handlers ~/.julia/packages/HTTP/A83Es/src/Handlers.jl:58
+│  [53] setup_http_streamer(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:294
+│  [54] (::Genie.Server.var"#7#14")(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:121
+│  [55] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [56] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [57] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/A83Es/src/Servers.jl:447
+│ 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:317
+┌ Info: 2023-05-16 08:27:25 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:31:10 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:31:12 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 08:31:12 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Info: 2023-05-16 08:32:26 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Error: 2023-05-16 08:32:38 Failed to revise /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│   exception = (LoadError("/home/coder/.julia/geniebuilder/apps/friapp1/app.jl", 28, "incomplete: \"module\" at /home/coder/.julia/geniebuilder/apps/friapp1/app.jl:1 requires end"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007f9db7bf61a8])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:721
+┌ Warning: 2023-05-16 08:32:39 The running code does not match the saved version for the following files:
+│ 
+│   /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:829
+┌ Info: 2023-05-16 08:35:36 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:35:37 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:35:38 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 08:35:38 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Info: 2023-05-16 08:39:21 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:39:28 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:39:30 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:39:32 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:39:38 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:40:01 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:40:06 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:41:55 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 08:42:04 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Error: 2023-05-16 08:42:09 Failed to revise /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:6", ErrorException("include(mapexpr, path) is not supported"), Any[(top-level scope at app.jl:6, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Warning: 2023-05-16 08:42:10 The running code does not match the saved version for the following files:
+│ 
+│   /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:829
+┌ Error: 2023-05-16 08:42:19 Failed to revise /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│   exception = (LoadError("/home/coder/.julia/geniebuilder/apps/friapp1/app.jl", 9, "\"module\" at /home/coder/.julia/geniebuilder/apps/friapp1/app.jl:1 expected \"end\", got \"(\""), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ff29eb456a8])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:721
+┌ Info: 2023-05-16 08:42:30 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:48:36 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:48:36 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:48:37 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 08:48:38 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Info: 2023-05-16 08:52:31 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Error: 2023-05-16 08:52:41 LoadError: syntax: "<" is not a unary operator
+│ Stacktrace:
+│   [1] top-level scope
+│     @ /tmp/jl_genie_build_qBRNsx/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:8
+│   [2] include
+│     @ ./Base.jl:419 [inlined]
+│   [3] get_template(path::String; partial::Bool, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#324", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#324"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:360
+│   [4] render(viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#324", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#324"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:438
+│   [5] render(::Type{MIME{Symbol("text/html")}}, viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Main.App.var"##Main.App_ReactiveModel!#324", Tuple{Symbol}, NamedTuple{(:model,), Tuple{Main.App.var"##Main.App_ReactiveModel!#324"}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:486
+│   [6] #html#33
+│     @ ~/.julia/packages/Genie/Jummj/src/renderers/Html.jl:637 [inlined]
+│   [7] (::Stipple.Pages.var"#5#6"{FilePathsBase.PosixPath, String, Module, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/XoQ2b/src/Pages.jl:52
+│   [8] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:535
+│   [9] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Router ~/.julia/packages/Genie/Jummj/src/Router.jl:173
+│  [10] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:278
+│  [11] (::Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/macros.jl:123
+│  [12] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [13] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [14] #153
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:425 [inlined]
+│  [15] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/process_messages.jl:70
+│  [16] #remotecall_fetch#158
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:450 [inlined]
+│  [17] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:449 [inlined]
+│  [18] #remotecall_fetch#162
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [19] remotecall_fetch
+│     @ /usr/bin/julia-1.8.5/share/julia/stdlib/v1.8/Distributed/src/remotecall.jl:492 [inlined]
+│  [20] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:305
+│  [21] setup_http_listener
+│     @ ~/.julia/packages/Genie/Jummj/src/Server.jl:304 [inlined]
+│  [22] (::HTTP.Handlers.var"#1#2"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ HTTP.Handlers ~/.julia/packages/HTTP/A83Es/src/Handlers.jl:58
+│  [23] setup_http_streamer(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:294
+│  [24] (::Genie.Server.var"#7#14")(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/Jummj/src/Server.jl:121
+│  [25] #invokelatest#2
+│     @ ./essentials.jl:729 [inlined]
+│  [26] invokelatest
+│     @ ./essentials.jl:726 [inlined]
+│  [27] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/A83Es/src/Servers.jl:447
+│  [28] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#14", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ./task.jl:484
+│ in expression starting at /tmp/jl_genie_build_qBRNsx/GenieViews/2e6e7fcc87754491a0903780c83db4e5de55751f.jl:8
+│ 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:317
+┌ Error: 2023-05-16 08:56:31 Failed to revise /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│   exception = (LoadError("/home/coder/.julia/geniebuilder/apps/friapp1/app.jl", 28, "missing comma or ) in argument list"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007feb9b12e578])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:721
+┌ Warning: 2023-05-16 08:56:31 The running code does not match the saved version for the following files:
+│ 
+│   /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:829
+┌ Info: 2023-05-16 08:57:17 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:57:17 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 08:57:18 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 08:57:19 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Info: 2023-05-16 09:01:21 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 09:01:23 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Error: 2023-05-16 09:01:26 Failed to revise /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/packages/Stipple/XoQ2b/src/ReactiveTools.jl:247", MethodError(Main.App.eval, (Main.App.Contact, Main.App.var"##Main.App_ReactiveModel!#336"("UYFPKIXXAQSGNBJBDYDDVSQVRGDYXWOY", LittleDict{Symbol, Any, Vector{Symbol}, Vector{Any}}(), Reactive{Bool}(Observable(false), 1, false, false, ""), Reactive{Bool}(Observable(false), 1, false, false, ""), Reactive{String}(Observable("Hello World!"), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:12"), Reactive{Int64}(Observable(2), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:13"), Reactive{String}(Observable("Yoyo"), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:14"), Reactive{String}(Observable("Tue the 16th..."), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:16"))), 0x0000000000007fac), Any[(top-level scope at ReactiveTools.jl:247, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Warning: 2023-05-16 09:01:27 The running code does not match the saved version for the following files:
+│ 
+│   /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:829
+┌ Error: 2023-05-16 09:01:41 Failed to revise /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/packages/Stipple/XoQ2b/src/ReactiveTools.jl:247", MethodError(JuliaInterpreter.ExprSplitter, (Main.App.Contact, Main.App.var"##Main.App_ReactiveModel!#336"("FEFOAMAJWBJSNAXRZVIULDOZNCEPHGWS", LittleDict{Symbol, Any, Vector{Symbol}, Vector{Any}}(), Reactive{Bool}(Observable(false), 1, false, false, ""), Reactive{Bool}(Observable(false), 1, false, false, ""), Reactive{String}(Observable("Hello World!"), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:12"), Reactive{Int64}(Observable(2), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:13"), Reactive{String}(Observable("Yoyo"), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:14"), Reactive{String}(Observable("Tue the 16th..."), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:16"))), 0x0000000000007fad), Any[(top-level scope at ReactiveTools.jl:247, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Error: 2023-05-16 09:01:50 Failed to revise /home/coder/.julia/geniebuilder/apps/friapp1/app.jl
+│   exception = Revise.ReviseEvalException("/home/coder/.julia/packages/Stipple/XoQ2b/src/ReactiveTools.jl:247", MethodError(JuliaInterpreter.ExprSplitter, (Main.App.Contact, Main.App.var"##Main.App_ReactiveModel!#336"("RLTPSRMCWELKMWTXSMXLVHOHRXFIGVJU", LittleDict{Symbol, Any, Vector{Symbol}, Vector{Any}}(), Reactive{Bool}(Observable(false), 1, false, false, ""), Reactive{Bool}(Observable(false), 1, false, false, ""), Reactive{String}(Observable("Hello World!"), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:12"), Reactive{Int64}(Observable(2), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:13"), Reactive{String}(Observable("Yoyo"), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:14"), Reactive{String}(Observable("Tue the 16th..."), 4, false, false, "/home/coder/.julia/geniebuilder/apps/friapp1/app.jl:16"))), 0x0000000000007fad), Any[(top-level scope at ReactiveTools.jl:247, 1)])
+└ @ Revise /home/coder/.julia/packages/Revise/Kw99o/src/packagedef.jl:719
+┌ Info: 2023-05-16 09:02:33 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 09:02:34 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 09:02:39 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 09:02:40 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366
+┌ Info: 2023-05-16 09:03:45 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 09:03:48 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 09:03:54 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-05-16 09:06:14 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 09:06:14 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-05-16 09:06:16 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/Jummj/src/Server.jl:161
+┌ Info: 2023-05-16 09:06:16 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/A83Es/src/Servers.jl:366

@@ -1,0 +1,34 @@
+┌ Info: 2023-03-31 15:36:26 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-03-31 15:36:28 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/SKepC/src/Server.jl:161
+┌ Info: 2023-03-31 15:36:29 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/z8l0i/src/Servers.jl:366
+┌ Info: 2023-03-31 16:10:18 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+eAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-03-31 15:37:00 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/SKepC/src/Server.jl:161
+┌ Info: 2023-03-31 16:10:27 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-03-31 16:10:29 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/SKepC/src/Server.jl:161
+┌ Info: 2023-03-31 16:11:42 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-03-31 16:11:44 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/SKepC/src/Server.jl:161
+┌ Info: 2023-03-31 16:11:45 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/z8l0i/src/Servers.jl:366
+┌ Info: 2023-03-31 16:16:38 Watching ["/home/coder/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-03-31 16:16:41 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/coder/.julia/packages/Genie/SKepC/src/Server.jl:161
+┌ Info: 2023-03-31 16:16:41 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers /home/coder/.julia/packages/HTTP/z8l0i/src/Servers.jl:366
+┌ Info: 2023-03-31 16:36:18 Autoreloading
+└ @ GenieAutoReload /home/coder/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
