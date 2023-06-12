@@ -1,0 +1,50 @@
+┌ Info: 2023-06-13 03:56:33 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 03:56:33 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 04:52:21 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 04:52:22 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 04:52:40 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /Users/abhi/.julia/packages/Genie/XpFvB/src/Server.jl:161
+┌ Info: 2023-06-13 04:52:40 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:366
+┌ Info: 2023-06-13 05:00:05 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 05:00:05 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 05:00:10 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /Users/abhi/.julia/packages/Genie/XpFvB/src/Server.jl:161
+┌ Info: 2023-06-13 05:00:10 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:366
+┌ Info: 2023-06-13 05:01:03 Autoreloading
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-06-13 05:01:12 Autoreloading
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-06-13 05:01:24 Autoreloading
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-06-13 05:03:36 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 05:03:36 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 05:03:42 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /Users/abhi/.julia/packages/Genie/XpFvB/src/Server.jl:161
+┌ Info: 2023-06-13 05:03:42 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:366
+┌ Info: 2023-06-13 05:04:11 Autoreloading
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
+┌ Info: 2023-06-13 05:24:13 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 05:24:13 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 05:24:13 Watching ["/Users/abhi/.julia/geniebuilder/apps/friapp1"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 05:24:16 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /Users/abhi/.julia/packages/Genie/XpFvB/src/Server.jl:161
+┌ Info: 2023-06-13 05:24:16 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:366

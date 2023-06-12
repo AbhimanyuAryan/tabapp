@@ -3,28 +3,15 @@ module App
 using GenieFramework
 @genietools
 
-# include("contact.jl")
-# import .Contact
+include("contact.jl")
+import .Contact
+
+include("home.jl")
+import .Home
 
 Genie.Renderers.Html.register_normal_element(:marquee)
 
-@app begin
-  @out message = "Hello World!"
-  @out test = 2
-  @out greet = "Yoyo"
-  # @out today = Dates.today()
-  @out today = "Tue the 16th..."
-
-  @onchange isready begin
-    @show "App is loaded"
-  end
-end
-
-@page("/", "app.jl.html")
-@page("/about", "about.jl.html")
-# @page("/contact", "contact.jl.html", 
-#       Stipple.ReactiveTools.DEFAULT_LAYOUT(),
-#       Core.eval(Contact, :(Stipple.ReactiveTools.@model())), 
-#       Contact)
-
+@page("/", "home.jl.html", Main.App.Home)
+@page("/about", "about.jl.html", Main.App.Home)
+@page("/contact", "contact.jl.html", Main.App.Contact)
 end
