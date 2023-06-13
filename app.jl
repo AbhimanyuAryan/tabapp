@@ -11,7 +11,7 @@ import .Home
 
 Genie.Renderers.Html.register_normal_element(:marquee)
 
-@page("/", "home.jl.html", Main.App.Home)
-@page("/about", "about.jl.html", Main.App.Home)
-@page("/contact", "contact.jl.html", Main.App.Contact)
+@page("/", "home.jl.html", Stipple.ReactiveTools.DEFAULT_LAYOUT(), Main.App.Home)
+@page("/about", "about.jl.html", Stipple.ReactiveTools.DEFAULT_LAYOUT(), Main.App.Home)
+@page("/contact", "contact.jl.html", Stipple.ReactiveTools.DEFAULT_LAYOUT(), Main.App.Contact)
 end
