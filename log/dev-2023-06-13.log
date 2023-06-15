@@ -176,3 +176,16 @@
 └ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:366
 ┌ Info: 2023-06-13 21:50:21 Server on 127.0.0.1:8000 closing
 └ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:393
+┌ Info: 2023-06-13 22:39:46 Watching ["/Users/abhi/Downloads/tabapp"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 22:39:46 Watching ["/Users/abhi/Downloads/tabapp"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 22:39:46 Watching ["/Users/abhi/Downloads/tabapp"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-13 22:39:47 
+│ Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /Users/abhi/.julia/packages/Genie/XpFvB/src/Server.jl:161
+┌ Info: 2023-06-13 22:39:47 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:366
+┌ Info: 2023-06-13 22:40:06 Server on 127.0.0.1:8000 closing
+└ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:393

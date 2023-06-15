@@ -15,4 +15,5 @@ using GenieFramework
   end
 end
 
+@page("/", "home.jl.html")
 end

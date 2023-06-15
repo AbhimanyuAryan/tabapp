@@ -1,0 +1,138 @@
+┌ Info: 2023-06-14 23:57:22 Watching ["/Users/abhi/Downloads/tabapp"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-14 23:57:22 Watching ["/Users/abhi/Downloads/tabapp"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-14 23:57:22 Watching ["/Users/abhi/Downloads/tabapp"]
+└ @ GenieAutoReload /Users/abhi/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-06-14 23:57:23 
+│ Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /Users/abhi/.julia/packages/Genie/XpFvB/src/Server.jl:161
+┌ Info: 2023-06-14 23:57:23 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /Users/abhi/.julia/packages/HTTP/uAaAw/src/Servers.jl:366
+┌ Error: 2023-06-14 23:57:32 MethodError: no method matching page(::Nothing, ::Vector{String}; partial::Bool, v__cloak::Bool, v-if::String)
+│ 
+│ Closest candidates are:
+│   page(!Matched::M, ::Any...; partial, title, class, style, channel, head_content, prepend, append, core_theme, kwargs...) where M<:ReactiveModel
+│    @ Stipple ~/.julia/dev/Stipple/src/Layout.jl:84
+│ 
+│ Stacktrace:
+│   [1] (::Main.App.Home.var"#37#50"{Nothing})()
+│     @ Main.App.Home /var/folders/0j/d0xd373d2tb7zdzcsqrk3mpw0000gn/T/jl_genie_build_4yYJdC/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:57
+│   [2] #invokelatest#2
+│     @ ./essentials.jl:816 [inlined]
+│   [3] invokelatest
+│     @ ./essentials.jl:813 [inlined]
+│   [4] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/XpFvB/src/renderers/Html.jl:137
+│   [5] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│   [6] div
+│     @ ./none:1 [inlined]
+│   [7] (::Main.App.Home.var"#36#49"{Nothing})()
+│     @ Main.App.Home /var/folders/0j/d0xd373d2tb7zdzcsqrk3mpw0000gn/T/jl_genie_build_4yYJdC/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:56
+│   [8] #invokelatest#2
+│     @ ./essentials.jl:816 [inlined]
+│   [9] invokelatest
+│     @ ./essentials.jl:813 [inlined]
+│  [10] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/XpFvB/src/renderers/Html.jl:137
+│  [11] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [12] div
+│     @ ./none:1 [inlined]
+│  [13] (::Main.App.Home.var"#35#48"{Nothing})()
+│     @ Main.App.Home /var/folders/0j/d0xd373d2tb7zdzcsqrk3mpw0000gn/T/jl_genie_build_4yYJdC/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:55
+│  [14] #invokelatest#2
+│     @ ./essentials.jl:816 [inlined]
+│  [15] invokelatest
+│     @ ./essentials.jl:813 [inlined]
+│  [16] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/XpFvB/src/renderers/Html.jl:137
+│  [17] div(::Function; attrs::Base.Pairs{Symbol, String, Tuple{Symbol, Symbol}, NamedTuple{(:class, :htmlsourceindent), Tuple{String, String}}})
+│     @ Genie.Renderer.Html ./none:2
+│  [18] div
+│     @ ./none:1 [inlined]
+│  [19] (::Main.App.Home.var"#34#47"{Nothing})()
+│     @ Main.App.Home /var/folders/0j/d0xd373d2tb7zdzcsqrk3mpw0000gn/T/jl_genie_build_4yYJdC/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:54
+│  [20] #invokelatest#2
+│     @ ./essentials.jl:816 [inlined]
+│  [21] invokelatest
+│     @ ./essentials.jl:813 [inlined]
+│  [22] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/XpFvB/src/renderers/Html.jl:137
+│  [23] #body#79
+│     @ ./none:2 [inlined]
+│  [24] (::Main.App.Home.var"#30#43"{Nothing})()
+│     @ Main.App.Home /var/folders/0j/d0xd373d2tb7zdzcsqrk3mpw0000gn/T/jl_genie_build_4yYJdC/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:9
+│  [25] #invokelatest#2
+│     @ ./essentials.jl:816 [inlined]
+│  [26] invokelatest
+│     @ ./essentials.jl:813 [inlined]
+│  [27] normal_element(f::Function, elem::String, args::Vector{Any}, attrs::Vector{Pair{Symbol, Any}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/XpFvB/src/renderers/Html.jl:137
+│  [28] #html#67
+│     @ ./none:2 [inlined]
+│  [29] func_dc62313a223e3efee34ace15d322d1682a5cd84f(; context::Module, model::Nothing)
+│     @ Main.App.Home /var/folders/0j/d0xd373d2tb7zdzcsqrk3mpw0000gn/T/jl_genie_build_4yYJdC/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:5
+│  [30] func_dc62313a223e3efee34ace15d322d1682a5cd84f()
+│     @ Main.App.Home /var/folders/0j/d0xd373d2tb7zdzcsqrk3mpw0000gn/T/jl_genie_build_4yYJdC/GenieViews/0a8afd2e89521e6480eb6d1c4bffaaead7ca1be0.jl:3
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:816 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:813 [inlined]
+│  [33] WebRenderable(::Function)
+│     @ Genie.Renderer ~/.julia/packages/Genie/XpFvB/src/Renderer.jl:163
+│  [34] |>
+│     @ ./operators.jl:907 [inlined]
+│  [35] render(::Type{MIME{Symbol("text/html")}}, viewfile::FilePathsBase.PosixPath; layout::String, context::Module, vars::Base.Pairs{Symbol, Nothing, Tuple{Symbol}, NamedTuple{(:model,), Tuple{Nothing}}})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/XpFvB/src/renderers/Html.jl:486
+│  [36] render
+│     @ ~/.julia/packages/Genie/XpFvB/src/renderers/Html.jl:482 [inlined]
+│  [37] #html#33
+│     @ ~/.julia/packages/Genie/XpFvB/src/renderers/Html.jl:637 [inlined]
+│  [38] (::Stipple.Pages.var"#5#6"{FilePathsBase.PosixPath, Nothing, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages ~/.julia/dev/Stipple/src/Pages.jl:58
+│  [39] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/XpFvB/src/Router.jl:535
+│  [40] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Router ~/.julia/packages/Genie/XpFvB/src/Router.jl:171
+│  [41] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/XpFvB/src/Server.jl:278
+│  [42] (::Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.9.1+0.aarch64.apple.darwin14/share/julia/stdlib/v1.9/Distributed/src/macros.jl:123
+│  [43] #invokelatest#2
+│     @ ./essentials.jl:816 [inlined]
+│  [44] invokelatest
+│     @ ./essentials.jl:813 [inlined]
+│  [45] #153
+│     @ ~/.julia/juliaup/julia-1.9.1+0.aarch64.apple.darwin14/share/julia/stdlib/v1.9/Distributed/src/remotecall.jl:425 [inlined]
+│  [46] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#29#30"{HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed ~/.julia/juliaup/julia-1.9.1+0.aarch64.apple.darwin14/share/julia/stdlib/v1.9/Distributed/src/process_messages.jl:70
+│  [47] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.9.1+0.aarch64.apple.darwin14/share/julia/stdlib/v1.9/Distributed/src/remotecall.jl:450 [inlined]
+│  [48] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.9.1+0.aarch64.apple.darwin14/share/julia/stdlib/v1.9/Distributed/src/remotecall.jl:449 [inlined]
+│  [49] #remotecall_fetch#162
+│     @ ~/.julia/juliaup/julia-1.9.1+0.aarch64.apple.darwin14/share/julia/stdlib/v1.9/Distributed/src/remotecall.jl:492 [inlined]
+│  [50] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.9.1+0.aarch64.apple.darwin14/share/julia/stdlib/v1.9/Distributed/src/remotecall.jl:492 [inlined]
+│  [51] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response)
+│     @ Genie.Server ~/.julia/packages/Genie/XpFvB/src/Server.jl:305
+│  [52] setup_http_listener
+│     @ ~/.julia/packages/Genie/XpFvB/src/Server.jl:304 [inlined]
+│  [53] (::HTTP.Handlers.var"#1#2"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ HTTP.Handlers ~/.julia/packages/HTTP/uAaAw/src/Handlers.jl:58
+│  [54] setup_http_streamer(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/XpFvB/src/Server.jl:294
+│  [55] (::Genie.Server.var"#7#14")(http::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/XpFvB/src/Server.jl:121
+│  [56] #invokelatest#2
+│     @ ./essentials.jl:816 [inlined]
+│  [57] invokelatest
+│     @ ./essentials.jl:813 [inlined]
+│  [58] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/uAaAw/src/Servers.jl:447
+│  [59] macro expansion
+│     @ ~/.julia/packages/HTTP/uAaAw/src/Servers.jl:385 [inlined]
+│ 
+└ @ Genie.Server /Users/abhi/.julia/packages/Genie/XpFvB/src/Server.jl:317
